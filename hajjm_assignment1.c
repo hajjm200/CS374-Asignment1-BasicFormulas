@@ -14,5 +14,19 @@ int main(){
         scanf("%d", &n);
     } while (n < 2 || n > 10);
 
-  
+  while (i<n){
+    printf("Obtaining data for spherical segment number %d\n", i + 1);
+
+            printf("What is the radius of the sphere (R)? ");
+        scanf("%f", &R);
+
+         printf("Entered data: R = %.2f ha = %.2f hb = %.2f.\n", R, ha, hb);
+
+        if (R <= 0 || ha <= 0 || hb <= 0 || ha > R || hb > R || hb > ha) {
+            printf("Invalid Input.\n");
+            continue;  // Ask for the same segment again
+        }
+
+        
+  }
 }
