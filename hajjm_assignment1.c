@@ -11,7 +11,7 @@ int main() {
 
     // Ask how many spherical segments to evaluate
     do {
-        printf("How many spherical segments you want to evaluate [2-10]? ");
+        printf("How many spherical segments you want to evaluate [2-10]?\n");
         scanf("%d", &n);
     } while (n < 2 || n > 10);
 
@@ -20,15 +20,15 @@ int main() {
         printf("Obtaining data for spherical segment number %d\n", i + 1);
 
         // Input radius
-        printf("What is the radius of the sphere (R)? ");
+        printf("What is the radius of the sphere (R)?\n");
         scanf("%f", &R);
 
         // Input ha
-        printf("What is the height of the top area of the spherical segment (ha)? ");
+        printf("What is the height of the top area of the spherical segment (ha)?\n");
         scanf("%f", &ha);
 
         // Input hb
-        printf("What is the height of the bottom area of the spherical segment (hb)? ");
+        printf("What is the height of the bottom area of the spherical segment (hb)?\n");
         scanf("%f", &hb);
 
         // Validation
